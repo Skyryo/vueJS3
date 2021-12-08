@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>vue_test1</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <h1>Vue3</h1>
+    <div id="app">
+        {{message}}
+    </div>
+    <script>
+        const appdata = {
+            data(){
+                return{
+                    message: 'hello Vue'
+                }
+            }
+        }
+        Vue.createApp(appdata).mount('#app')
+    </script>
+</body>
+</html>
